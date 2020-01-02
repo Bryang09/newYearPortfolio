@@ -1,0 +1,32 @@
+$primary_color: #02fff5;
+
+.svg-inline--fa.fa-w-16 {
+  width: 18px;
+  height: 18px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+
+  svg {
+    transition: 0.3s ease-in;
+    color: #ccd6ff;
+    padding: 7px 0;
+
+    &:hover {
+      transform: translateY(-3px);
+      color: $primary_color;
+    }
+  }
+
+  & a {
+    margin-bottom: 20px;
+  }
+
+  //   .line {
+  //     width: 1px;
+  //     height: 90px;
+  //     background: #02fff5;
+  //   }
+}

@@ -6,13 +6,15 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   const nav = links.map((res, i) => {
+    const { link, text } = res;
     return (
-      <h4 key={i}>
-        <span>0{i + 1}.</span>
+      <h4 key={i} className={i === 3 ? "resume" : null}>
+        {i !== 3 ? <span>{`0${i + 1}.`}</span> : ""}
+
         {i === 2 || i === 3 ? (
-          <a href={res.link}>{res.text}</a>
+          <a href={link}>{text}</a>
         ) : (
-          <Link to={`/${res.link}`}>{res.text}</Link>
+          <Link to={`/${link}`}>{text}</Link>
         )}
       </h4>
     );

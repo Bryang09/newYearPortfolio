@@ -1,66 +1,13 @@
-$primary_color: #02fff5;
-
 .Landing {
   width: 100vw;
   height: 100vh;
-  background: #081136;
+  background: #0a192f;
   margin: 0;
 
   .container {
     width: 85%;
     height: 100vh;
     margin: auto;
-
-    .header {
-      height: auto;
-      width: 100%;
-      display: flex;
-      padding: 20px 0;
-
-      .logoContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .logo {
-          height: 42px;
-          width: 42px;
-          background: url(/logo.svg) no-repeat center center / contain;
-        }
-      }
-
-      .nav {
-        display: flex;
-        justify-content: flex-end;
-        flex-grow: 1;
-
-        .navContainer {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        h4 {
-          color: $primary_color;
-          padding: 0 10px;
-          font-family: "Roboto Mono", monospace;
-          font-weight: 300;
-          font-size: 12px;
-          margin: 0;
-          display: flex;
-
-          a {
-            text-decoration: none;
-            color: #fff;
-            transition: 1s ease;
-
-            &:hover {
-              color: $primary_color;
-            }
-          }
-        }
-      }
-    }
   }
 }
 
