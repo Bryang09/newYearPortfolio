@@ -9,6 +9,10 @@ $primary_color: #02fff5;
   display: flex;
   flex-direction: column;
   align-self: flex-end;
+  animation-timing-function: ease-in-out;
+  animation-name: icons;
+  animation-duration: 3s;
+  // animation-delay: 2.2s;
 
   svg {
     transition: 0.3s ease-in;
@@ -24,10 +28,13 @@ $primary_color: #02fff5;
   & a {
     margin-bottom: 20px;
   }
+}
 
-  //   .line {
-  //     width: 1px;
-  //     height: 90px;
-  //     background: #02fff5;
-  //   }
+@keyframes icons {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

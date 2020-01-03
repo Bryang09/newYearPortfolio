@@ -2,6 +2,7 @@ $primary_color: #02fff5;
 
 .main {
   padding-left: 50px;
+  animation: main 2s ease;
 
   h4 {
     color: $primary_color;
@@ -34,6 +35,7 @@ $primary_color: #02fff5;
     text-transform: capitalize;
     line-height: 2;
     font-weight: 400;
+    letter-spacing: 2px;
   }
 
   a {
@@ -48,5 +50,17 @@ $primary_color: #02fff5;
     &:hover {
       background: rgba(100, 255, 218, 0.07);
     }
+  }
+}
+
+@keyframes main {
+  0% {
+    transform: translateX(-500vw);
+  }
+  50% {
+    transform: translateX(10vw);
+  }
+  100% {
+    transform: translateX(0vw);
   }
 }
