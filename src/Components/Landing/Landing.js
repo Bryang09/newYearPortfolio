@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import "./Landing.scss";
 
-import Header from "./Header/Header";
+import Header from "../Header/Header";
 import Info from "./Info/Info";
 
 export class Landing extends Component {
