@@ -1,13 +1,17 @@
 import React from "react";
 import Nav from "./Nav/Nav";
 
+import { Link } from "react-router-dom";
+
 import "./Header.scss";
 
 const Header = () => {
   return (
     <div className="header">
       <div className="logoContainer">
-        <div className="logo"></div>
+        <Link to="/">
+          <div className="logo" />
+        </Link>
       </div>
       <div className="nav">
         <div className="navContainer">
