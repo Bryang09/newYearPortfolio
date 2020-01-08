@@ -109,3 +109,26 @@ $primary_color: #02fff5;
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .projectSection {
+    .project {
+      margin-bottom: -15vh;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .imgContainer {
+        width: 50%;
+        height: 50%;
+      }
+
+      .text {
+        transform: translate(35px, -130px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+}
