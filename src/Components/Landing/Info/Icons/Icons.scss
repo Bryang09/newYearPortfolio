@@ -12,9 +12,9 @@ $primary_color: #02fff5;
   animation-timing-function: ease-in-out;
   animation-name: icons;
   animation-duration: 3s;
-  position: absolute;
+  position: fixed;
   left: 8%;
-  bottom: 10%;
+  top: 50%;
   // animation-delay: 2.2s;
 
   svg {
