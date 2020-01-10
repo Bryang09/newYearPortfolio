@@ -19,9 +19,6 @@ class Header extends Component {
   };
 
   render() {
-    console.log(this.state.optClass);
-    console.log(window.scrollY);
-
     const { optClass } = this.state;
 
     return (

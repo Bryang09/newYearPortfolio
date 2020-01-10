@@ -15,6 +15,7 @@ $primary_color: #02fff5;
   position: fixed;
   left: 8%;
   top: 50%;
+
   // animation-delay: 2.2s;
 
   svg {
@@ -39,5 +40,32 @@ $primary_color: #02fff5;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .icons {
+    z-index: 20;
+    background: #f44336;
+    padding: 20px;
+    left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .icons {
+    padding: 10px;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    top: 90%;
+
+    a {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0;
+    }
   }
 }
