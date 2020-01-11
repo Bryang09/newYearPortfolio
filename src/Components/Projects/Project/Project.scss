@@ -54,7 +54,7 @@ $primary_color: #02fff5;
       }
 
       .textContainer {
-        padding: 10px;
+        padding: 10px 15px 10px 10px;
         width: 100%;
         height: auto;
         background: #172a45;
@@ -67,6 +67,13 @@ $primary_color: #02fff5;
 
         h4 {
           font-weight: 400;
+          font-size: 20px;
+        }
+
+        span {
+          font-weight: 300;
+          color: #848890;
+          font-size: 12px;
         }
       }
       .tech {
@@ -171,7 +178,72 @@ $primary_color: #02fff5;
 
       .text {
         h3 {
-          font-size: 12px;
+          font-size: 16px;
+        }
+
+        .textContainer {
+          h4 {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1367px) and (min-aspect-ratio: 4/3) {
+  .projectSection {
+    .project {
+      height: 30vh;
+      margin: 12vh auto;
+
+      &:first-child {
+        margin-top: 20vh;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) and (min-aspect-ratio: 4/3) {
+  .projectSection {
+    .project {
+      height: 60vh;
+      margin-bottom: -20vh;
+    }
+  }
+}
+@media screen and (max-width: 1023px) and (min-aspect-ratio: 4/3) {
+  .projectSection {
+    .project {
+      height: 130vh;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin-bottom: 15vh;
+
+      .imgContainer {
+        width: 50%;
+        height: 100%;
+
+        .img {
+          .border {
+            display: none;
+          }
+        }
+      }
+
+      .text {
+        transform: translate(0);
+        width: auto;
+        margin-left: 0;
+
+        h3 {
+          font-size: 16px;
+        }
+
+        .textContainer {
+          h4 {
+            font-size: 12px;
+          }
         }
       }
     }

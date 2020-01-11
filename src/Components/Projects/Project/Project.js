@@ -18,6 +18,9 @@ const Project = () => {
           <h3>{name}</h3>
           <div className="textContainer">
             <h4>{desc}</h4>
+            {heroku ? (
+              <span>* Please allow loading time for Heroku app.</span>
+            ) : null}
           </div>{" "}
           <div className="tech">
             {tech.map((res, i) => {

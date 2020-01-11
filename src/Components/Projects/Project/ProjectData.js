@@ -3,7 +3,7 @@ export const data = [
     name: "Movies Application",
     desc:
       "An application that searches The MoviesDb Api to search for movies and tv shows.",
-    tech: ["React", "Sass", "Axios"],
+    tech: ["React", "Scss", "Axios"],
     projectLink: "https://bryang09.github.io/new-movies/#/",
     ghLink: "https://github.com/Bryang09/new-movies",
     img: "movie.svg",
