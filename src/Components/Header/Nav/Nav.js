@@ -12,7 +12,9 @@ const Nav = () => {
         {i !== 2 ? <span>{`0${i + 1}.`}</span> : ""}
 
         {i === 1 || i === 2 ? (
-          <a href={link}>{text}</a>
+          <a href={link} target="_blank">
+            {text}
+          </a>
         ) : (
           <Link to={`/${link}`}>{text}</Link>
         )}

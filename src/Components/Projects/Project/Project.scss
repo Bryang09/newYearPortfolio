@@ -17,6 +17,7 @@ $primary_color: #02fff5;
       display: flex;
       position: relative;
       z-index: 10;
+      animation: images 1s ease;
 
       .img {
         width: 100%;
@@ -49,6 +50,8 @@ $primary_color: #02fff5;
       text-align: right;
       color: $primary_color;
       transform: translateY(100px);
+      animation: textContain 2s ease;
+
       h3 {
         font-family: "Roboto Mono", monospace;
       }
@@ -260,5 +263,26 @@ $primary_color: #02fff5;
         margin-top: 28vh;
       }
     }
+  }
+}
+
+@keyframes images {
+  0% {
+    transform: translateX(-150vw);
+  }
+  50% {
+    transform: translateX(5vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+@keyframes textContain {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
