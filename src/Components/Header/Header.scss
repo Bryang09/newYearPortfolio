@@ -1,74 +1,194 @@
 $primary_color: #02fff5;
-.scroll {
-  box-shadow: 1px 7px 80px;
-}
-
 .header {
-  height: auto;
-  width: 85%;
   display: flex;
-  position: fixed;
-  top: 0;
-  padding: 30px;
-  left: 7vw;
-  background: #0a192f;
-  z-index: 50;
-  transition: 0.4s ease;
 
-  .logoContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .logo {
-      height: 42px;
-      width: 42px;
-      background: url(/logo.svg) no-repeat center center / contain;
-    }
+  .Burger {
+    display: none;
   }
 
-  .nav {
+  .navBar {
     display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
+    width: 85%;
+    position: fixed;
+    top: 0;
+    padding: 30px;
+    left: 7vw;
+    background: #0a192f;
+    z-index: 50;
+    transition: 0.4s ease;
 
-    .navContainer {
+    .logoContainer {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      .logo {
+        height: 42px;
+        width: 42px;
+        background: url(/logo.svg) no-repeat center center / contain;
+      }
     }
-
-    h4 {
-      color: $primary_color;
-      padding: 0 10px;
-      font-family: "Roboto Mono", monospace;
-      font-weight: 300;
-      font-size: 12px;
-      margin: 0;
+    .nav {
       display: flex;
+      justify-content: flex-end;
+      flex-grow: 1;
 
-      a {
-        text-decoration: none;
-        color: #fff;
-        transition: 1s ease;
-
-        &:hover {
-          color: $primary_color;
-        }
+      .navContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
-      &.resume {
-        border: 1.2px solid $primary_color;
-        padding: 0;
+      h4 {
+        color: $primary_color;
+        padding: 0 10px;
+        font-family: "Roboto Mono", monospace;
+        font-weight: 300;
+        font-size: 12px;
+        margin: 0;
+        display: flex;
 
         a {
-          padding: 5px 15px;
+          text-decoration: none;
+          color: #fff;
           transition: 1s ease;
+
           &:hover {
-            background: rgba(100, 255, 218, 0.07);
+            color: $primary_color;
+          }
+        }
+
+        &.resume {
+          border: 1.2px solid $primary_color;
+          padding: 0;
+
+          a {
+            padding: 5px 15px;
+            transition: 1s ease;
+            &:hover {
+              background: rgba(100, 255, 218, 0.07);
+            }
           }
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    .navBar {
+      display: none;
+    }
+
+    .Burger {
+      display: flex;
+      width: 85%;
+      height: auto;
+
+      .navItems {
+        display: none;
+      }
+
+      .burgerHeader {
+        display: flex;
+        position: fixed;
+        top: 0;
+        padding: 30px;
+        background: #0a192f;
+        z-index: 50;
+        transition: 0.4s ease;
+        left: 0;
+        width: 100%;
+        height: auto;
+
+        .logoContainer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .logo {
+            height: 42px;
+            width: 30px;
+            background: url(/logo.svg) no-repeat center center / contain;
+          }
+        }
+
+        .burgerContainer {
+          position: fixed;
+          right: 10px;
+
+          .burgerIcon {
+            padding: 20px;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+
+            .line {
+              width: 30px;
+              height: 5px;
+              border: none;
+              border-bottom: 2px solid $primary_color;
+            }
+
+            .line1 {
+              width: 35px;
+            }
+            .line2 {
+              width: 30px;
+            }
+            .line3 {
+              width: 25px;
+            }
+          }
+        }
+      }
+    }
+    .active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #0a192f;
+      z-index: 50;
+      animation: active 1s ease;
+
+      .navItems {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h4 {
+          span {
+            display: none;
+          }
+        }
+        .resume {
+          border: 2px solid $primary_color;
+          padding: 10px 25px;
+        }
+
+        a {
+          color: $primary_color;
+          text-decoration: none;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes active {
+  0% {
+    opacity: 0;
+    transform: translateX(150vw);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

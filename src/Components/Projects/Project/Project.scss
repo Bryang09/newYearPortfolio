@@ -208,6 +208,14 @@ $primary_color: #02fff5;
     .project {
       height: 60vh;
       margin-bottom: -20vh;
+
+      .text {
+        .textContainer {
+          h4 {
+            font-size: 16px;
+          }
+        }
+      }
     }
   }
 }

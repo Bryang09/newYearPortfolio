@@ -4,10 +4,12 @@ import Nav from "./Nav/Nav";
 import { Link } from "react-router-dom";
 
 import "./Header.scss";
+import Burger from "./Burger/Burger";
 
 class Header extends Component {
   state = {
-    optClass: "top"
+    optClass: "top",
+    burger: false
   };
 
   componentDidMount = () => {
@@ -18,8 +20,12 @@ class Header extends Component {
     });
   };
 
+  onBurger = () => {
+    this.setState({ burger: !this.state.burger });
+  };
+
   render() {
-    const { optClass } = this.state;
+    const { optClass, burger } = this.state;
 
     return (
       <div
@@ -30,14 +36,17 @@ class Header extends Component {
             : { boxShadow: "1px 7px 80px" }
         }
       >
-        <div className="logoContainer">
-          <Link to="/">
-            <div className="logo" />
-          </Link>
-        </div>
-        <div className="nav">
-          <div className="navContainer">
-            <Nav />
+        <Burger onBurger={this.onBurger} burger={burger} />
+        <div className="navBar">
+          <div className="logoContainer">
+            <Link to="/">
+              <div className="logo" />
+            </Link>
+          </div>
+          <div className="nav">
+            <div className="navContainer">
+              <Nav />
+            </div>
           </div>
         </div>
       </div>
