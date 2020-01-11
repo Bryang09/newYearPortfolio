@@ -69,3 +69,12 @@ $primary_color: #02fff5;
     }
   }
 }
+
+@media screen and (max-width: 1024px) and (min-aspect-ratio: 4/3) {
+  .icons {
+    background: #f44336;
+    left: 0;
+    padding: 5px 15px;
+    top: 30%;
+  }
+}
