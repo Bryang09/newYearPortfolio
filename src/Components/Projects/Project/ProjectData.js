@@ -2,7 +2,7 @@ export const data = [
   {
     name: "Movies Application",
     desc:
-      "An application that searches The MoviesDb Api to search for movies and tv shows.",
+      "An application that uses The MoviesDb Api to search for movies and tv shows.",
     tech: ["React", "Scss", "Axios"],
     projectLink: "https://bryang09.github.io/new-movies/#/",
     ghLink: "https://github.com/Bryang09/new-movies",
@@ -12,7 +12,7 @@ export const data = [
   {
     name: "Watches Application",
     desc:
-      "Fullstack Application (MERN) that display stylish watches for men and women",
+      "Fullstack Application (MERN) that displays stylish watches for men and women",
     tech: ["MongoDB", "Express", "React", "Node.js", "Scss"],
     projectLink: "https://intense-bayou-29884.herokuapp.com/#/",
     ghLink: "https://intense-bayou-29884.herokuapp.com/#/",
