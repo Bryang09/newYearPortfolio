@@ -255,6 +255,10 @@ $primary_color: #02fff5;
           }
         }
       }
+
+      &:first-child {
+        margin-top: 28vh;
+      }
     }
   }
 }

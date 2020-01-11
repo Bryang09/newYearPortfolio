@@ -14,8 +14,11 @@ const Burger = props => {
           </Link>
         </div>
 
-        <div className="burgerContainer" onClick={onBurger}>
-          <div className="burgerIcon">
+        <div className="burgerContainer">
+          <div
+            onClick={onBurger}
+            className={burger ? "burgerIcon activeIcon" : "burgerIcon"}
+          >
             <div className="line line1"></div>
             <div className="line line2"></div>
             <div className="line line3"></div>
